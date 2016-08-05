@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>krisfalk HTML & CSS</title>
+		<meta name="description" content="Kris' portfolio.">
+		<meta name="keywords" content="Kris, falk, portfolio">
+		<meta name="author" content="Kris Falk">
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+	</head>
+	
+	<body style="background-color: #F0F0F0">
+		<nav class="navbar navbar-inverse" style="background-color: #F0F0F0">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Kris Falk Portfolio</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="home.html">Home</a></li>
+				<li class="active"><a href="#">HTML & CSS</a></li>
+				<li><a href="cSharp.html"> - C# - </a></li>
+				<!--add new navbar buttons here as needed-->
+			</ul>
+			</div>
+		</div>
+		</nav>
+ 
+	<center>
+		<h1><strong>HTML & CSS Week</strong></h1>	
+	</center>
+	
+		<ul>
+			<li>
+				<div class="dropdown closed" style="padding:3px">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						My First Website
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<p class="dropdown-item">- Making my first website was fun and intuitive.</p><br>
+						<p class="dropdown-item">- This was the first project in devCodeCamp and I learned a lot about HTML and CSS. -</p><br>
+						<a class="dropdown-item" href="krisfalk.github.io">- Click here to see website</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown closed" style="padding:3px">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Batch Files
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<p class="dropdown-item">- This is the first time I have ever created batch files.</p><br>
+						<p class="dropdown-item">- I can understand the usefulness of a batch file, but may never use again. -</p><br>
+						<p class="dropdown-item">--> Batch file 1. Creates a new local user account and then deletes it.<br>--> Batch File Content:<br>- @ECHO off<br>- title Creating new local user account.<br>- set /p _user=Please type the name of the new user and press 'Enter':<br>- net user %_user% /add<br>- pause >nul<br>- echo change password<br>- net user %_user% *<br>- echo press 'Enter' to delete.<br>- pause >nul<br>- net user %_user% /del</a><br>
+						<p class="dropdown-item"><br>--> Batch file 2. Merges two .txt documents into one .txt document.<br>--> Batch File Content:<br>- @echo off<br>- set _firstText=%1<br>- set _secondText=%2<br>- set /p _thirdText=Type what merged text document should be called and press 'Enter':<br>- copy %_firstText%+%_secondText% %_thirdText%<br></a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	
+	</body>
+</html>
